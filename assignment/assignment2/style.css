@@ -1,0 +1,218 @@
+/*
+ * Add your CSS styles to this file.
+ */
+
+/* ==== BODY ==== */
+body{
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	background-color: #E8E8E8;
+}
+
+/* ==== LINKS - GENERAL ==== */
+
+a{
+	color: black;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #1da1f2;
+}
+
+/* ==== HEADER 1 - TITLE ==== */
+
+h1.site-title{
+	background-color: #1da1f2;
+	color: white;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+h1.site-title:hover{
+	text-decoration: none;
+	color: white;
+}
+
+/* ==== NAVBAR ==== */
+
+.navbar{
+	width: 100%;
+	background-color: white;
+	color: #FFFFFF;
+	/*padding-bottom: 10px;*/
+}
+
+.navbar-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navitem{
+	display: inline-block;
+	
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#underlined_nav_item{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #1da1f2;
+}
+
+.navbar-search{
+	float: right;
+}
+
+#navbar-search-input {
+
+	background: #F5F5F5;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #989898;
+	border-radius: 3px;
+	padding: 5px;
+
+	font-weight: 90;
+}
+
+#navbar-search-input:focus {
+
+	background: white;
+}
+
+#navbar-search-button {
+	background: white;
+	border: none;
+}
+
+#navbar-search-button:hover {
+	background: white;
+	border: none;
+	color:#1da1f2 ;
+}
+
+/* ==== BODY & FLEXBOXES ==== */
+
+.twit-container {
+	/*height: 200px;*/
+	
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	padding-top: 50px;
+	padding-bottom: 0px;
+	padding-right: 100px;
+	padding-left: 100px;
+
+	max-width: 1260px;
+
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+
+.twit {
+	background-color: #FFFFFF;
+	margin: 3px;
+	padding-bottom: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	display: flex;
+	flex: 1 1 30%;
+
+	
+	min-width: 300px;
+	max-width: 400px;
+	
+	min-height: 50px;
+
+}
+
+.twit-content{
+
+	width: 100%;
+
+	padding top: 5px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	padding-right: 15px;
+	font-weight: 400;
+
+}
+
+
+.twit-author{
+	/*border-top: 0px solid white;*/
+	font-weight: 800;
+	text-align: right;
+}
+
+.twit-icon{
+	font-size: 30px;
+	position: relative;
+	top: 15px;
+	left: 15px;
+
+
+}
+
+/* ==== CURSOR STUFF ==== */
+
+.pointer {
+	cursor: pointer;
+}
+
+.text_pointer{
+	cursor: text;
+}
+
+/* ==== CREATE TWIT BUTTON ====*/
+
+#create-twit-button{
+	position: fixed;
+	right: 18px;
+	bottom: 18px;
+
+	padding: 25px 25px;
+	border-radius: 50%;
+
+	font-size: 35px;
+	background-color: red;
+	color: white;
+
+	border: none;
+	box-shadow: 5px 5px 5px #BEBEBE;
+}
+
+#create-twit-button:hover{
+	background-color: #1da1f2;
+	padding: 29px 29px; 
+
+	right: 14px;
+	bottom: 14px;
+
+}

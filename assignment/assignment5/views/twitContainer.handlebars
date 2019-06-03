@@ -1,0 +1,23 @@
+
+<main class="twit-container">
+
+{{#unless single}}
+
+	{{#each twitArray}}
+		{{>twitTemplate}}
+	{{/each}}
+
+	</main>
+
+	{{>addTwitButtonPartial}}
+
+	{{>addTwitModalPartial}}
+	
+{{else}}
+
+	{{>twitTemplate twitArray}}
+	
+	</main>
+	
+{{/unless}}
+

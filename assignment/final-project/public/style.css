@@ -1,0 +1,289 @@
+/*
+ * The Gnome Depot opens its port to all shoppers ;)
+ *
+ * [style.css]
+ *
+ * THIS PROGRAM IS PROPRIETARY CONTENT OF THE AUTHORS THAT FOLLOW.
+ *
+ * name:Lyell Read
+ * email:readly@oregonstate.edu
+ *
+ * name:Michael Boly
+ * email:bolym@oregonstate.edu
+ *
+ * name:Scott Richards
+ * email:richarsc@oregonstate.edu
+ *
+ * DO NOT COPY OUR CODE, WRITE YOUR OWN, *******!
+ */
+
+:root {
+    --maincolor: #e6740a;
+    --accentcolor: #ff0101;
+    --background: #272b33;
+    --altbackground: #424958;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    background: var(--altbackground);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+/*_____________________nav_____________________*/
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#navbar {
+    display: flex;
+    font-size: 1.2em;
+    text-align: left;
+    align-items: center;
+    background: var(--background);
+}
+
+#navbar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    height: 15px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20) 0, rgba(0, 0, 0, 0) 10px, rgba(0, 0, 0, 0) 100%);
+}
+
+#upper-nav {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(90deg,
+            var(--maincolor),
+            var(--accentcolor));
+    width: 100%;
+    padding: 0.4em 0 0.4em 0;
+}
+
+#upper-nav a,
+#upper-nav span {
+    font-weight: 700;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+#upper-nav a:hover,
+#upper-nav span:hover {
+    color: var(--background);
+    cursor: pointer;
+}
+
+/*
+.login {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 1px;
+    width: auto;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.login button {
+    border: 1px solid;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: (0 2px 2px rgba(black, 0.1));
+    background-image: linear-gradient(90deg, white, white);
+    
+}
+
+.login button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(90deg,
+            var(--accentcolor),
+            var(--maincolor));
+}
+
+*/
+
+.login-trigger {
+    color: white;
+}
+
+.login-trigger:hover .login {
+    display: block;
+
+}
+
+
+.login-trigger:hover span::after {
+    content: "";
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    height: 10px;
+    width: 200px;
+}
+
+#main-nav {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 3px 0 3px 20px;
+    flex-wrap: nowrap;
+}
+
+.gnome-logo {
+    margin: 5px 0;
+    padding: 3px 0;
+    height: 55px;
+    border: 1px solid;
+    background-color: var(--altbackground);
+}
+
+.nav-link {
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    margin-bottom: -2px;
+    border-bottom: 2px solid var(--maincolor);
+}
+
+.item-hover-state {
+    display: inline-block;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-search {
+    margin: 5px 0;
+    padding: 3px 0;
+    height: 55px;
+    width: 500px;
+
+}
+
+#navbar-search-button {
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #343434;
+    cursor: pointer;
+}
+
+#navbar-search-button:hover {
+    color: #319df6;
+}
+
+#navbar-search-button:focus {
+    color: #319df6;
+    outline: none;
+}
+
+#main-nav a,
+#main-nav span {
+    color: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+#main-nav span a:hover {
+    border: none;
+}
+
+/*_____________________/nav_____________________*/
+
+/*_____________________home_____________________*/
+.banner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    margin: 100px 0;
+    width: 1280px;
+}
+
+/*____________________/home_____________________*/
+/*____________________login_____________________*/
+.loginStuff {
+    margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*___________________/login_____________________*/
+/*___________________products___________________*/
+.tools-container {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-top: 100px;
+    font-size: 38px;
+    color: var(--maincolor);
+}
+
+.tool {
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    background-color: white;
+}
+
+.tool img {
+    width: 200px;
+    height: 200px;
+}
+
+.tool ul {
+    list-style-type: none;
+}
+
+/*__________________/products___________________*/
+/*_____________________404______________________*/
+.error-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.not-found {
+    font-size: 32px;
+    color: var(--maincolor);
+}
+
+/*____________________/404______________________*/

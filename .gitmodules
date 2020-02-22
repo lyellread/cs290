@@ -1,0 +1,3 @@
+[submodule "assignments/final-project/the-gnome-depot"]
+	path = assignments/final-project/the-gnome-depot
+	url = git@github.com:lyellread/the-gnome-depot.git
